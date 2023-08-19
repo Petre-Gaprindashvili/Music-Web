@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+p {
+  background-color: cadetblue;
+  height: 100vh;
+}
+
 section {
   height: 100vh;
   background-position: top;
@@ -11,6 +16,7 @@ section {
   background-attachment: fixed;
   animation: anime 30s ease-in-out infinite alternate;
 }
+
 @keyframes anime {
   0%,
   10% {
