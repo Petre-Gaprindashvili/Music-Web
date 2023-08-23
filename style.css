@@ -301,6 +301,40 @@ ul li:hover ul.dropdown {
 .animated a i {
   color: #242731;
 }
+.send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  margin-top: 30px;
+  gap: 0.4em;
+}
+.input-searching {
+  width: 200px;
+  height: 28px;
+  background-color: #ffffff;
+  color: #314acf;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  letter-spacing: 4px;
+  overflow: hidden;
+  transition: 1s;
+  cursor: pointer;
+}
+.icon-searching {
+  color: #ffffff;
+  background-color: #242731;
+  height: 28px;
+  width: 60px;
+  padding: 15px 20px;
+  border-radius: 2px;
+}
+::placeholder {
+  color: #0f0f0f;
+  font-size: 11px;
+}
+
 .sub-container {
   display: flex;
   align-items: flex-start;
@@ -398,20 +432,39 @@ ul li:hover ul.dropdown {
     gap: 1em;
   }
   .flex-container h1 {
-    padding-right: 100px;
-    padding-top: 20px;
-    font-size: 20px;
+    font-size: 15px;
+    width: 250px;
+    text-align: center;
+    margin: 10px 10px;
   }
+
   .animated {
-    margin-top: 20px;
-    margin-left: 150px;
+    display: none;
   }
+
+  .send {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .logo {
     padding-top: 30px;
   }
+  .sub {
+    width: 50px;
+    font-size: 11px;
+    height: 28px;
+  }
+  .trial {
+    width: 60px;
+    font-size: 11px;
+    height: 28px;
+  }
 
   .button {
-    padding-right: 200px;
+    gap: 5px;
   }
 
   .flex-container h2 {
@@ -426,16 +479,22 @@ ul li:hover ul.dropdown {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1em;
+    gap: 5px;
   }
 }
 @media (max-width: 550px) {
+  .logo {
+    padding-top: 60px;
+  }
   .menu {
     width: 350px;
     padding-top: 10px;
   }
   .main {
     margin-top: 20px;
+  }
+  .flex-container {
+    gap: 4px;
   }
   .flex-container h1 {
     font-size: 16px;
@@ -447,25 +506,43 @@ ul li:hover ul.dropdown {
   .flex-container h3 {
     font-size: 16px;
   }
-  .button {
-    padding-right: 0;
-    padding-top: 20px;
-  }
   .sub {
-    font-size: 10px;
     width: 50px;
-    height: 40px;
+    font-size: 11px;
+    height: 28px;
   }
   .trial {
-    font-size: 10px;
-    width: 70px;
-    height: 40px;
+    width: 60px;
+    font-size: 11px;
+    height: 28px;
+  }
+
+  .button {
+    gap: 5px;
+  }
+  .sub-2 {
+    width: 50px;
+    font-size: 8px;
+    height: 28px;
+  }
+  .trial-2 {
+    width: 60px;
+    font-size: 8px;
+    height: 28px;
+  }
+
+  .button-2 {
+    gap: 10px;
   }
 }
 
 @media (max-width: 400px) {
-  .button {
-    padding-right: 50px;
+  .trial,
+  .sub {
+    font-size: 8px;
+  }
+  .flex-container h1 {
+    padding-top: 10px;
   }
   .logo {
     padding-top: 60px;
@@ -480,5 +557,35 @@ ul li:hover ul.dropdown {
   .burger,
   .toggle-menu {
     top: 20%;
+  }
+}
+@media (max-width: 300px) {
+  .flex-container h2 {
+    width: 200px;
+    font-size: 18px;
+  }
+  .flex-container h3 {
+    font-size: 16px;
+    width: 200px;
+  }
+
+  .button {
+    margin: 5px 8px;
+    gap: 5px;
+  }
+  .input-searching {
+    width: 150px;
+    height: 25px;
+  }
+  .icon-searching {
+    width: 40px;
+    height: 25px;
+    padding: 15px 8px;
+  }
+  .menu {
+    width: 270px;
+  }
+  .flex-container {
+    gap: 4px;
   }
 }
