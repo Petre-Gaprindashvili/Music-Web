@@ -518,6 +518,8 @@ ul li:hover ul.dropdown {
   }
 
   .button {
+    padding-top: 15px;
+    display: flex;
     gap: 1em;
   }
   .sub-2 {
@@ -563,6 +565,7 @@ ul li:hover ul.dropdown {
     margin-top: 80px;
   }
   .button {
+    display: flex;
     gap: 1em;
   }
 }
@@ -577,6 +580,7 @@ ul li:hover ul.dropdown {
   }
 
   .button {
+    display: flex;
     margin: 5px 8px;
     gap: 1em;
   }
@@ -594,5 +598,139 @@ ul li:hover ul.dropdown {
   }
   .flex-container {
     gap: 4px;
+  }
+}
+.container-full {
+  height: 100vh;
+  background-color: #0f0f0f;
+}
+.text-animation {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.text-animation h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-family: sans-serif;
+}
+.roller {
+  height: 4.125rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.roller #rolltext {
+  color: #723fff;
+  position: absolute;
+  font-family: sans-serif;
+  top: 0;
+  animation: slide 10s infinite;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -4rem;
+  }
+  50% {
+    top: -8rem;
+  }
+  72.5% {
+    top: -12.25rem;
+  }
+}
+
+.cardless {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0%, 0%);
+  border-radius: 10px;
+  position: relative;
+}
+.cardless::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  z-index: 900;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(1, 14, 6, 0.178);
+}
+.card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  transform: translateX(1100px);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  object-fit: cover;
+}
+.card.card-one {
+  z-index: 7;
+  animation-delay: 1.5s;
+  background-image: url(https://images.unsplash.com/photo-1594434533760-02e0f3faaa68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1569&q=80);
+}
+
+.card.card-second {
+  z-index: 6;
+  background-image: url(https://images.unsplash.com/photo-1514510316197-ac2d9e62319a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+  animation-delay: 8.5s;
+}
+
+.card.card.card-third {
+  z-index: 5;
+  background-image: url(https://images.unsplash.com/photo-1619775749507-1f5bee021845?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+
+  animation-delay: 15.5s;
+}
+
+.card.card.card-fourth {
+  z-index: 4;
+  background-image: url(https://images.unsplash.com/photo-1595079835020-30a7ac7c0b02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+  animation-delay: 22.5s;
+}
+
+@keyframes opaqTransition {
+  3% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  28% {
+    transform: translateX(-1100px);
+  }
+  100% {
+    transform: translateX(-1100px);
   }
 }
