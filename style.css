@@ -208,9 +208,32 @@ ul li:hover ul.dropdown {
   transition: 0.5s;
   width: 350px;
 }
+
 .flex-container h1 {
-  color: #fff;
+  position: relative;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #ffffff, #ffffff, #ffffff);
+
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: anime 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
 }
+
+@keyframes anime {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
 .flex-container h2 {
   padding-top: 30px;
   text-align: center;
@@ -759,6 +782,7 @@ ul li:hover ul.dropdown {
   align-items: center;
   justify-content: center;
   gap: 4em;
+  margin: 10px;
 }
 .svg {
   width: 110px;
@@ -766,28 +790,36 @@ ul li:hover ul.dropdown {
 .svg-icon {
   width: 75px;
 }
-
-.flex-container h1 {
-  position: relative;
-  font-family: sans-serif;
-  text-transform: uppercase;
-  font-size: 1.5em;
-  letter-spacing: 4px;
-  overflow: hidden;
-  background: linear-gradient(90deg, #314acf, #fff, #314acf);
-
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: anime 5s linear infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: #cf181823;
+.genre-container {
+  background: #0f0f0f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-@keyframes anime {
-  0% {
-    background-position: -500%;
-  }
-  100% {
-    background-position: 500%;
-  }
+.genre-container h2 {
+  color: #ffffff;
+  font-size: 50px;
+  margin-top: 50px;
+}
+.genre-container p {
+  color: #878787;
+  white-space: pre-wrap;
+  text-align: center;
+  font-size: 24px;
+}
+.genre-photo {
+  display: flex;
+  gap: 2em;
+}
+.name-genre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+.name-genre img {
+  border-radius: 7px;
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
 }
