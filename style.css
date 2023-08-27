@@ -820,6 +820,10 @@ ul li:hover ul.dropdown {
   }
 }
 @media (max-width: 528px) {
+  .genre-container h2 {
+    text-align: center;
+  }
+
   .text-animation h1 {
     width: 300px;
   }
@@ -864,8 +868,6 @@ ul li:hover ul.dropdown {
   .card {
     background-size: 300px;
   }
-}
-@media (max-width: 355px) {
   .card {
     background-position: center;
   }
@@ -878,6 +880,10 @@ ul li:hover ul.dropdown {
   }
   .named {
     font-size: 11px;
+  }
+  .genre-container h2 {
+    margin-top: 20px;
+    text-align: center;
   }
 }
 
