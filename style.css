@@ -1252,7 +1252,7 @@ ul li:hover ul.dropdown {
   .grid-container p {
     font-size: large;
     white-space: normal;
-    width: 180px;
+    width: 200px;
   }
   .image-sounded {
     object-fit: cover;
@@ -1324,7 +1324,7 @@ ul li:hover ul.dropdown {
     text-align: center;
   }
   .grid-container p {
-    width: 150px;
+    width: 180px;
   }
 
   .image-sounded {
@@ -1653,6 +1653,11 @@ ul li:hover ul.dropdown {
     justify-items: center;
     gap: 0em;
   }
+  .pay-container {
+    background-color: #202020;
+    height: 580px;
+    width: 380px;
+  }
 
   .pay-container h5 {
     color: #ffffff;
@@ -1681,21 +1686,22 @@ ul li:hover ul.dropdown {
   }
   .submit-1 {
     cursor: pointer;
-    margin-top: 68px;
+    margin: 40px 35px;
     display: flex;
     flex-direction: column;
     gap: 1em;
   }
   .submit {
     cursor: pointer;
-    margin-top: 68px;
+
+    margin: 40px 35px;
     display: flex;
     flex-direction: column;
     gap: 1em;
   }
   .submitt {
     cursor: pointer;
-    margin-top: 68px;
+    margin: 40px 35px;
     display: flex;
     flex-direction: column;
     gap: 1em;
@@ -1704,8 +1710,8 @@ ul li:hover ul.dropdown {
 @media (max-width: 430px) {
   .pay-container {
     background-color: #202020;
-    height: 550px;
-    width: 260px;
+    height: 590px;
+    width: 300px;
   }
   .subscription-container h4 {
     text-align: center;
@@ -1775,21 +1781,23 @@ ul li:hover ul.dropdown {
 
   .submit-1 {
     cursor: pointer;
-    margin-top: 68px;
+    margin: 25px 15px;
+
     display: flex;
     flex-direction: column;
     gap: 1em;
   }
   .submit {
     cursor: pointer;
-    margin-top: 68px;
+    margin: 25px 15px;
+
     display: flex;
     flex-direction: column;
     gap: 1em;
   }
   .submitt {
     cursor: pointer;
-    margin-top: 68px;
+    margin: 25px 15px;
     display: flex;
     flex-direction: column;
     gap: 1em;
