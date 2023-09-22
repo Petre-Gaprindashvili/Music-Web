@@ -1803,3 +1803,61 @@ ul li:hover ul.dropdown {
     gap: 1em;
   }
 }
+
+.window-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  background-color: #0f0f0f;
+}
+.window-header {
+  color: #ffffff;
+}
+.mainpicture img {
+  width: 600px;
+  height: 300px;
+  margin-top: 30px;
+
+  object-fit: cover;
+}
+.smallpictures {
+  display: flex;
+  align-items: center;
+}
+.name-artist {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.name-artist p {
+  color: #ffffff;
+}
+
+.smallpictures img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.modal-container {
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  left: 20%;
+  bottom: 20%;
+
+  margin-top: 200px;
+}
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+.modal {
+  background-color: darkslategray;
+  width: 700px;
+  height: 400px;
+  text-align: center;
+}
