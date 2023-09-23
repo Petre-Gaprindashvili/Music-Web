@@ -1808,23 +1808,27 @@ ul li:hover ul.dropdown {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
   justify-content: center;
   background-color: #0f0f0f;
 }
 .window-header {
   color: #ffffff;
+  font-size: 40px;
+  white-space: pre-line;
+  text-align: center;
+  margin-top: 100px;
 }
 .mainpicture img {
-  width: 600px;
-  height: 300px;
+  width: 752px;
+  height: 370px;
   margin-top: 30px;
-
   object-fit: cover;
+  object-position: top;
 }
 .smallpictures {
   display: flex;
   align-items: center;
+  gap: 2.4em;
 }
 .name-artist {
   display: flex;
@@ -1834,21 +1838,24 @@ ul li:hover ul.dropdown {
 }
 .name-artist p {
   color: #ffffff;
+  cursor: pointer;
 }
 
 .smallpictures img {
   width: 120px;
   height: 120px;
   object-fit: cover;
+
   cursor: pointer;
 }
 .modal-container {
   position: fixed;
   opacity: 0;
-  pointer-events: none;
-  left: 20%;
-  bottom: 20%;
 
+  pointer-events: none;
+  left: 22%;
+  bottom: 20%;
+  transition: 0.7s ease-in-out;
   margin-top: 200px;
 }
 .modal-container.show {
@@ -1856,8 +1863,41 @@ ul li:hover ul.dropdown {
   opacity: 1;
 }
 .modal {
-  background-color: darkslategray;
-  width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  align-items: center;
+  background-color: #242731;
+  width: 755px;
   height: 400px;
+  border-radius: 3px;
   text-align: center;
+}
+.artist-image {
+  object-fit: fill;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+.real-name {
+  color: #ffffff;
+  font-size: 15px;
+  font-family: sans-serif;
+}
+.about-artist {
+  color: #ffffff;
+  font-size: 19px;
+  font-family: serif;
+  padding: 10px;
+}
+.close {
+  width: 100px;
+  height: 30px;
+  background-color: #314acf;
+  border: 1px solid #314acf;
+  color: #ffffff;
+  font-size: 15px;
+  cursor: pointer;
+}
+.close:hover {
+  filter: brightness(70px);
 }
