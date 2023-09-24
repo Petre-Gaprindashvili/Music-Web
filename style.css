@@ -1853,7 +1853,7 @@ ul li:hover ul.dropdown {
   opacity: 0;
 
   pointer-events: none;
-  left: 22%;
+  left: 21.2%;
   bottom: 20%;
   transition: 0.7s ease-in-out;
   margin-top: 200px;
@@ -1865,11 +1865,11 @@ ul li:hover ul.dropdown {
 .modal {
   display: flex;
   flex-direction: column;
-  gap: 1.5em;
+  position: relative;
   align-items: center;
   background-color: #242731;
-  width: 755px;
-  height: 400px;
+  width: 780px;
+  height: 510px;
   border-radius: 3px;
   text-align: center;
 }
@@ -1889,15 +1889,16 @@ ul li:hover ul.dropdown {
   font-family: serif;
   padding: 10px;
 }
-.close {
-  width: 100px;
-  height: 30px;
-  background-color: #314acf;
-  border: 1px solid #314acf;
-  color: #ffffff;
-  font-size: 15px;
-  cursor: pointer;
+
+iframe {
+  width: 500px;
+  height: 260px;
 }
-.close:hover {
-  filter: brightness(70px);
+.exit {
+  position: absolute;
+  right: 1%;
+
+  top: 3.5%;
+  cursor: pointer;
+  color: blueviolet;
 }
