@@ -67,6 +67,45 @@ closeon.addEventListener("click", () => {
   modal_containeron.classList.remove("show");
 });
 
-function toggle() {
-  alert("ar you sure?");
-}
+close.addEventListener("mouseover", (mouseOver) => {
+  document.getElementById("close").style.color = "red";
+  close.add("show");
+});
+close.addEventListener("mouseout", (mouseOut) => {
+  document.getElementById("close").style.color = "white";
+  close.add("show");
+});
+
+closee.addEventListener("mouseover", (mouseOver) => {
+  document.getElementById("closee").style.color = "red";
+  closee.add("show");
+});
+closee.addEventListener("mouseout", (mouseOut) => {
+  document.getElementById("closee").style.color = "white";
+  closee.add("show");
+});
+closeit.addEventListener("mouseover", (mouseOver) => {
+  document.getElementById("closeit").style.color = "red";
+  closeit.add("show");
+});
+closeit.addEventListener("mouseout", (mouseOut) => {
+  document.getElementById("closeit").style.color = "white";
+  closeit.add("show");
+});
+
+closeto.addEventListener("mouseover", (mouseOver) => {
+  document.getElementById("closeto").style.color = "red";
+  closeto.add("show");
+});
+closeto.addEventListener("mouseout", (mouseOut) => {
+  document.getElementById("closeto").style.color = "white";
+  closeto.add("show");
+});
+closeon.addEventListener("mouseover", (mouseOver) => {
+  document.getElementById("closeon").style.color = "red";
+  closeto.add("show");
+});
+closeon.addEventListener("mouseout", (mouseOut) => {
+  document.getElementById("closeon").style.color = "white";
+  closeto.add("show");
+});
