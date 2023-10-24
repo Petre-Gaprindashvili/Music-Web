@@ -109,3 +109,8 @@ closeon.addEventListener("mouseout", (mouseOut) => {
   document.getElementById("closeon").style.color = "white";
   closeto.add("show");
 });
+
+function myfault() {
+  const element = document.body;
+  element.classList.toggle("dark-mode");
+}

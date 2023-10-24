@@ -1905,13 +1905,13 @@ iframe {
   height: 100vh;
   position: relative;
 
-  border-width: 3px;
-  border-style: solid;
-  border-image: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;
+  border-left: 65px solid #242731;
+  border-right: 65px solid #242731;
 }
 
 video {
   background-size: cover;
+
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -1923,19 +1923,27 @@ video {
 .shadow {
   position: absolute;
   top: 40%;
-  left: 25%;
+  left: 26%;
+  font-size: 80pt;
+  color: #242731;
+  font-family: cursive;
 
-  font-size: 144pt;
-  font-family: "Luckiest Guy";
+  text-shadow: rgba(247, 243, 238, 0.8) 3px 0px 7px,
+    rgba(81, 52, 21, 0.8) -3px 0px 7px, rgba(81, 52, 21, 0.8) 0px 4px 7px;
+
+  border-radius: 2px;
+  cursor: pointer;
+}
+.shadow:hover {
+  border: 2px solid #fff;
+
+  transition: 1s;
+}
+.out-now {
+  position: absolute;
+  top: 62%;
+  left: 35%;
+  font-size: 28px;
   color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-shadow: 0px -6px 0 #212121, 0px -6px 0 #212121, 0px 6px 0 #212121,
-    0px 6px 0 #d10d0d, -6px 0px 0 #212121, 6px 0px 0 #212121, -6px 0px 0 #212121,
-    6px 0px 0 #4b0b0b, -6px -6px 0 #212121, 6px -6px 0 #212121,
-    -6px 6px 0 #212121, 6px 6px 0 #212121, -6px 18px 0 #212121,
-    0px 18px 0 #212121, 6px 18px 0 #212121, 0 19px 1px rgba(0, 0, 0, 0.1),
-    0 0 6px rgba(0, 0, 0, 0.1), 0 6px 3px rgba(0, 0, 0, 0.3),
-    0 12px 6px rgba(0, 0, 0, 0.2), 0 18px 18px rgba(0, 0, 0, 0.25),
-    0 24px 24px rgba(0, 0, 0, 0.2), 0 36px 36px rgba(0, 0, 0, 0.15);
+  font-family: serif;
 }
