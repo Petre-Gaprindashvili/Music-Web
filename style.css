@@ -1849,6 +1849,8 @@ ul li:hover ul.dropdown {
   cursor: pointer;
 }
 .modal-container {
+  position: relative;
+
   position: fixed;
   opacity: 0;
 
@@ -1903,47 +1905,39 @@ iframe {
 
 .video-container {
   height: 100vh;
-  position: relative;
-
-  border-left: 65px solid #242731;
-  border-right: 65px solid #242731;
-}
-
-video {
-  background-size: cover;
-
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
+  /* background-color: #0f0f0f; */
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.another {
+  display: flex;
+}
+video {
+  width: 400px;
+}
+.try {
+  width: 200px;
 }
 
-.shadow {
-  position: absolute;
-  top: 40%;
-  left: 26%;
-  font-size: 80pt;
-  color: #242731;
-  font-family: cursive;
+/* #right-btn {
+  margin: auto 0 auto -2em;
+} */
 
-  text-shadow: rgba(247, 243, 238, 0.8) 3px 0px 7px,
-    rgba(81, 52, 21, 0.8) -3px 0px 7px, rgba(81, 52, 21, 0.8) 0px 4px 7px;
-
-  border-radius: 2px;
-  cursor: pointer;
+#right-btn .arrow {
+  transform: rotate(-225deg);
 }
-.shadow:hover {
-  border: 2px solid #fff;
 
-  transition: 1s;
+/* #left-btn {
+  z-index: 0;
+  margin: auto -2em auto 0;
+} */
+
+#left-btn .arrow {
+  transform: rotate(135deg);
 }
-.out-now {
-  position: absolute;
-  top: 62%;
-  left: 35%;
-  font-size: 28px;
-  color: #fff;
-  font-family: serif;
+
+.arrow {
+  margin-left: 100px;
 }

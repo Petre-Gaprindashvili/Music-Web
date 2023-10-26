@@ -568,7 +568,7 @@
               <iframe
                 width="560"
                 height="315"
-                src="https://www.youtube.com/embed/Cr8K88UcO0s?si=WhXp2DaKhLeqtYcV"
+                src="   "
                 title="YouTube video player"
                 frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -620,14 +620,35 @@
       </div>
     </div>
     <div class="video-container">
-      <video playsinline autoplay muted loop poster="">
-        <source
-          src="  https://d2cstorage-a.akamaihd.net/atl/treysongz/TreySongz_BackHomeTrailer_Option%203.mp4 "
-          type=""
-        />
-      </video>
-      <h1 class="shadow">Back Home</h1>
-      <h4 class="out-now">THE NEW ALBUM OUT NOW</h4>
+      <video
+        id="covering"
+        controls
+        autoplay
+        src="Juice WRLD - Walk with Shadows (Music Video).mp4"
+      ></video>
+      <div class="another">
+        <button id="left-btn">
+          <i class="arrow"> </i>
+        </button>
+
+        <video
+          onclick="trythis(this)"
+          class="try"
+          controls
+          autoplay
+          src="Lil Baby & Lil Durk Feat. Rod Wave - Rich Off Pain (Official Audio).mp4"
+        ></video>
+        <video
+          onclick="trythis(this)"
+          class="try"
+          controls
+          autoplay
+          src="Lil Yachty - Wanna Be Us ft. Burberry Perry (Official Video).mp4"
+        ></video>
+        <button id="right-btn">
+          <i class="arrow"> </i>
+        </button>
+      </div>
     </div>
 
     <script src="./main.js"></script>

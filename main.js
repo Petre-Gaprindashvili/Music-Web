@@ -114,3 +114,7 @@ function myfault() {
   const element = document.body;
   element.classList.toggle("dark-mode");
 }
+
+function trythis(mp4) {
+  covering.src = mp4.src;
+}
