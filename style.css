@@ -12,6 +12,13 @@ section {
 
 nav ul {
   display: flex;
+
+  top: 0;
+}
+
+.sticky {
+  background-color: #0f0f0f;
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
@@ -32,8 +39,8 @@ nav {
 }
 .logo img {
   object-fit: cover;
-  width: 21px;
-  height: 21px;
+  width: 19px;
+  height: 19px;
 }
 .logo a {
   text-decoration: none;
@@ -41,7 +48,7 @@ nav {
 .logo p,
 span,
 b {
-  font-size: 25px;
+  font-size: 22px;
   color: #ffffff;
   font-family: cursive;
 }
@@ -1907,9 +1914,14 @@ ul li:hover ul.dropdown {
   margin-top: 50px;
   cursor: pointer;
 }
+.form-language select:hover {
+  filter: brightness(85%);
+}
 .form-language option {
+  color: #fff;
   cursor: pointer;
 }
+
 .column-footer1 {
   display: flex;
   margin-top: 120px;
@@ -1919,19 +1931,26 @@ ul li:hover ul.dropdown {
 .list-flex {
   display: flex;
   align-items: baseline;
-
-  gap: 1.7em;
+  gap: 3.5em;
 }
 .list-offers p {
   color: #878787;
-  font-size: 22px;
-  text-align: center;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: start;
+  margin-right: 5px;
 }
 .list-offers h6 {
+  font-family: sans-serif;
   color: #fff;
   font-size: 17px;
-  margin: 14px;
+  margin-top: 19px;
+  cursor: pointer;
 }
+.list-offers h6:hover {
+  text-decoration: underline;
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -1944,7 +1963,7 @@ footer {
   font-family: sans-serif;
 
   font-size: 20px;
-  margin-left: 20px;
+  margin-right: 10px;
 }
 .social-logo {
   display: flex;
