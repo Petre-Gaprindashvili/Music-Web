@@ -16,13 +16,6 @@ nav ul {
   top: 0;
 }
 
-.sticky {
-  background-color: #0f0f0f;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
 nav {
   height: 10vh;
 
@@ -33,6 +26,7 @@ nav {
 
   align-items: center;
 }
+
 .logo {
   display: flex;
   align-items: flex-end;
@@ -211,9 +205,34 @@ ul li:hover ul.dropdown {
 .flex-container {
   height: 90vh;
 }
-.animated:hover {
-  transition: 0.5s;
-  width: 350px;
+.animated {
+  position: relative;
+}
+.searching {
+  position: absolute;
+  top: 19px;
+  right: 12px;
+  cursor: pointer;
+}
+.inputsearching {
+  width: 0px;
+  height: 40px;
+  background-color: #242731;
+  border: #fff;
+  color: #fff;
+  border-radius: 2px;
+}
+.inputsearching.show {
+  width: 250px;
+  height: 40px;
+  transition: 0.8s;
+}
+::placeholder {
+  color: #fff;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 10px;
+  margin: 10px;
 }
 
 .flex-container h1 {
@@ -294,75 +313,6 @@ ul li:hover ul.dropdown {
   text-align: center;
   color: #ffffff;
   font-size: 16px;
-}
-
-.animated {
-  width: 50px;
-  background: #fff;
-
-  height: 40px;
-  border-radius: 30px;
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.8s;
-  box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.4);
-}
-.animated:hover input {
-  background-color: #fff;
-  width: 350px;
-  height: 40px;
-}
-.animated input {
-  background: transparent;
-  border: none;
-  outline: none;
-  width: 0px;
-  font-weight: 500;
-  font-size: 17px;
-  transition: 0.8s;
-}
-::placeholder {
-  color: #0f0f0f;
-  font-size: 16px;
-}
-
-.animated a i {
-  color: #242731;
-}
-.send {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  display: none;
-  margin-top: 30px;
-  gap: 0.4em;
-}
-.input-searching {
-  width: 200px;
-  height: 28px;
-  background-color: #ffffff;
-  color: #314acf;
-  font-weight: bold;
-  border: none;
-  border-radius: 2px;
-  letter-spacing: 4px;
-  overflow: hidden;
-  transition: 1s;
-  cursor: pointer;
-}
-.icon-searching {
-  color: #ffffff;
-  background-color: #242731;
-  height: 28px;
-  width: 60px;
-  padding: 15px 20px;
-  border-radius: 2px;
-}
-::placeholder {
-  color: #0f0f0f;
-  font-size: 11px;
 }
 
 .sub-container {

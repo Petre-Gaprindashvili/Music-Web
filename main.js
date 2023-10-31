@@ -3,17 +3,8 @@
 //   element.classList.toggle("dark-mode");
 // }
 
-// window.onscroll = function () {
-//   myFunction();
-// };
-
-// var navbar = document.getElementById("navbar");
-// var sticky = navbar.offsetTop;
-
-// function myFunction() {
-//   if (window.pageYOffset >= sticky) {
-//     navbar.classList.add("sticky");
-//   } else {
-//     navbar.classList.remove("sticky");
-//   }
-// }
+const searching = document.querySelector(".searching");
+const inputsearching = document.querySelector(".inputsearching");
+searching.addEventListener("click", () => {
+  inputsearching.classList.toggle("show");
+});
