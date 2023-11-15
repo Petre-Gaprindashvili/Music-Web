@@ -3,24 +3,39 @@
 //   element.classList.toggle("dark-mode");
 // }
 
-// const searching = document.querySelector(".searching");
-// const inputsearching = document.querySelector(".inputsearching");
-// searching.addEventListener("click", () => {
-//   inputsearching.classList.toggle("show");
-// });
-
-const tabs = document.querySelectorAll("[data-tab-target]");
-const tabcontents = document.querySelectorAll("[data-tab-content]");
-tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    const target = document.querySelector(tab.dataset.tabTarget);
-    tabcontents.forEach((tabcontent) => {
-      tabcontent.classList.remove("active");
-    });
-    tabs.forEach((tab) => {
-      tab.classList.remove("active");
-    });
-    tab.classList.add("active");
-    target.classList.add("active");
-  });
+const searching = document.querySelector(".searching");
+const inputsearching = document.querySelector(".inputsearching");
+searching.addEventListener("click", () => {
+  inputsearching.classList.toggle("show");
 });
+
+function validate() {
+  const email = document.getElementById("email").value;
+  const password = document.getElementById("password").value;
+  const message = document.getElementById("message");
+  const message2 = document.getElementById("message2");
+  const login = document.getElementById("login");
+  const regex = /^[a-zA-Z][a-zA-Z0-9\-\_\.]+@[a-zA-Z0-9]{2,}\.[a-zA-Z0-9]{2,}$/;
+
+  if (regex.test(email)) {
+    const email = document.getElementById("email");
+    email.style.border = "1px solid green";
+  } else {
+    const email = document.getElementById("email");
+
+    email.style.border = "1px solid red";
+  }
+  if (password.trim().length >= 8) {
+    const password = document.getElementById("password");
+    password.style.border = "1px solid green";
+  } else {
+    const password = document.getElementById("password");
+    password.style.border = "1px solid red";
+  }
+  if (email.length == 0 && password.length == 0) {
+    const malo = document.createElement("h5");
+    const node = document.createTextNode("ujgkugggkug");
+    malo.appendChild(node);
+    document.getElementById("mydiv").appendChild(malo);
+  }
+}

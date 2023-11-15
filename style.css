@@ -2018,6 +2018,12 @@ footer {
 .register-input button:hover {
   filter: brightness(80%);
 }
+
+#message {
+  color: red;
+  text-align: center;
+}
+
 .storytteler-container {
   background-color: #0f0f0f;
   height: 100vh;
