@@ -209,32 +209,31 @@ ul li:hover ul.dropdown {
   position: relative;
 }
 .searching {
-  position: absolute;
-  top: 19px;
-  right: 12px;
-  cursor: pointer;
-}
-.inputsearching {
-  width: 0px;
-  height: 40px;
+  position: relative;
+  height: 39px;
+  width: 265px;
   background-color: #242731;
-  border: #fff;
-  color: #fff;
+  border: 1px solid #242731;
   border-radius: 2px;
-}
-.inputsearching.show {
-  width: 250px;
-  height: 40px;
-  transition: 0.8s;
-}
-::placeholder {
   color: #fff;
-  font-weight: bold;
-  font-size: 17px;
-  padding: 10px;
-  margin: 10px;
+  font-size: 18px;
+  padding: 5px;
+}
+.icon-search {
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  cursor: pointer;
+  background-color: #242731;
+  border: 1px solid #242731;
 }
 
+::placeholder {
+  color: #878787;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 0px;
+}
 .flex-container h1 {
   position: relative;
   font-family: sans-serif;
@@ -2018,13 +2017,16 @@ footer {
 .register-input button:hover {
   filter: brightness(80%);
 }
-
-#message {
+#validepass {
+  color: red;
+  text-align: center;
+}
+#validemail {
   color: red;
   text-align: center;
 }
 
-.storytteler-container {
+/* .storytteler-container {
   background-color: #0f0f0f;
   height: 100vh;
 }
@@ -2032,4 +2034,4 @@ footer {
 #svg-logo {
   width: 40px;
   margin-left: 30px;
-}
+} */
