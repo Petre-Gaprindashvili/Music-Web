@@ -2018,12 +2018,20 @@ footer {
   filter: brightness(80%);
 }
 #validepass {
+  margin-top: 10px;
   color: red;
   text-align: center;
+  font-size: 21px;
+  font-weight: bolder;
+  font-family: sans-serif;
 }
 #validemail {
+  margin-top: 10px;
   color: red;
   text-align: center;
+  font-size: 21px;
+  font-weight: bolder;
+  font-family: sans-serif;
 }
 
 /* .storytteler-container {

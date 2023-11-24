@@ -17,25 +17,31 @@ const emailvalidation = (email) => {
 
 email.addEventListener("keyup", (e) => {
   if (!emailvalidation(email.value)) {
-    validemail.innerText = "please fill the field";
+    validemail.innerText = " Invalid email address";
+    validemail.style.color = "red";
     return "";
   } else {
+    validemail.innerText = "Valid email address";
     validemail.style.color = "green";
+  }
+});
+email.addEventListener("keyup", (e) => {
+  if (email.value == "") {
+    validemail.innerText = "";
+  }
+});
+login.addEventListener("click", () => {
+  if (email.value.length === 0) {
+    email.style.border = "1px solid red";
   }
 });
 
 password.addEventListener("keyup", (e) => {
-  if (!emailvalidation(password.value)) {
-    validepass.innerText = "please fill the field";
+  if (password.value.length < 8) {
+    validepass.innerText = "please enter valid password";
     return "";
   } else {
     validepass.style.color = "green";
-  }
-});
-
-login.addEventListener("click", () => {
-  if (email.value.length === 0) {
-    email.style.border = "1px solid red";
   }
 });
 
