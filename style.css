@@ -10,11 +10,11 @@ section {
   background: #0f0f0f;
 }
 
-nav ul {
+/* nav ul {
   display: flex;
 
   top: 0;
-}
+} */
 
 nav {
   height: 10vh;
@@ -22,7 +22,6 @@ nav {
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
 
   align-items: center;
 }
@@ -48,125 +47,6 @@ b {
 }
 .logo b {
   color: #67b1cf;
-}
-
-ul {
-  text-decoration: none;
-}
-ul li {
-  display: inline-block;
-  position: relative;
-}
-ul li a {
-  display: block;
-  text-decoration: none;
-  padding: 10px 20px;
-}
-.dropdown:hover {
-  padding-top: 50px;
-}
-.main {
-  color: #ffffff;
-  font-size: 20px;
-}
-
-ul li ul.dropdown li {
-  display: block;
-}
-ul li ul.dropdown {
-  width: auto;
-  position: absolute;
-  z-index: 999;
-  display: none;
-}
-.dropdown li a {
-  border: 1px solid #242731;
-  color: #ffffff;
-  font-size: 17px;
-  background: #242731;
-}
-
-ul li:hover ul.dropdown {
-  display: block;
-}
-
-.navigation {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.menu {
-  display: flex;
-  justify-content: start;
-  flex-direction: row;
-  align-items: center;
-  z-index: 1;
-}
-.menu li {
-  list-style-type: none;
-}
-.menu li a {
-  text-decoration: none;
-  display: block;
-
-  line-height: 0.9;
-}
-.burger {
-  position: relative;
-  width: 20px;
-  height: 4px;
-  background-color: #314acf;
-  cursor: pointer;
-  border-radius: 10px;
-  z-index: 2;
-}
-.burger:before,
-.burger:after {
-  content: "";
-  position: absolute;
-  height: 4px;
-  right: 0;
-  background-color: #314acf;
-  border-radius: 10px;
-  transition: 0.4s;
-}
-.burger:before {
-  top: 5px;
-  width: 20px;
-}
-.burger:after {
-  top: 10px;
-  width: 20px;
-}
-
-.toggle-menu {
-  position: absolute;
-  width: 20px;
-  height: 100%;
-  cursor: pointer;
-  z-index: 3;
-  opacity: 0;
-}
-.burger,
-.toggle-menu {
-  display: none;
-}
-
-.navigation input:checked ~ .burger {
-  background: transparent;
-}
-.navigation input:checked ~ .burger:before {
-  top: 0;
-  transform: rotate(-45deg);
-  width: 30px;
-}
-.navigation input:checked ~ .burger:after {
-  top: 0;
-  width: 30px;
-  transform: rotate(45deg);
-}
-.navigation input:checked ~ .menu {
-  left: 0;
 }
 
 .button {
