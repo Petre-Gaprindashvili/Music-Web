@@ -10,20 +10,32 @@ section {
   background: #0f0f0f;
 }
 
-/* nav ul {
+nav ul {
   display: flex;
+  align-items: center;
+  gap: 3.5em;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 22px;
+}
+nav ul li a:hover {
+  color: #314acf;
 
-  top: 0;
-} */
+  transition: 0.2s;
+}
 
 nav {
   height: 10vh;
-
   position: relative;
   width: 100%;
   display: flex;
-
   align-items: center;
+  justify-content: space-around;
 }
 
 .logo {
