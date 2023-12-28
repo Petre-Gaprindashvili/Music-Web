@@ -96,15 +96,17 @@ b {
 }
 .flex-container {
   height: 90vh;
+  
 }
 .animated {
   position: relative;
 }
 .searching {
+
   position: relative;
   height: 39px;
   width: 265px;
-  background-color: #242731;
+  background-color:#242731;
   border: 1px solid #242731;
   border-radius: 2px;
   color: #fff;
@@ -127,6 +129,7 @@ b {
   padding: 0px;
 }
 .flex-container h1 {
+  
   position: relative;
   font-family: sans-serif;
   text-transform: uppercase;
@@ -208,9 +211,8 @@ b {
 
 .sub-container {
   display: flex;
-  align-items: flex-start;
-  padding: 40px;
 
+  padding: 40px;
   justify-content: space-between;
 }
 .button {
@@ -254,10 +256,10 @@ b {
     background-color: #fff;
   }
   .flex-container h1 {
-    margin-left: 150px;
+    margin-left: 0px;
   }
   .animated {
-    margin-right: 150px;
+    margin-right: 30px;  
   }
 
   .logo {
