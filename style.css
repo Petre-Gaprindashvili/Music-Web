@@ -2011,3 +2011,30 @@ footer {
   font-weight: bolder;
   font-size: 47px;
 }
+.bago{
+  height: 100vh;
+  background-color: #0f0f0f;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+.sango{
+
+  width: 500px;
+  height: 500px;
+}
+.bago header{
+  color: #fff;
+  font-size: 40px;
+}
+.bago button{
+  border: none;
+  background-color: #723fff;
+  color:#fff;
+  font-size: 18px;
+  height: 32px;
+  width: 140px;
+
+}
